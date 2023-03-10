@@ -1,5 +1,11 @@
 package com.polonorte;
 
+/**
+ * Clase Reno
+ * Representa un reno de los de papa noel
+ * @author alumno
+ * @version 1.0
+ */
 
 public class Reno {
 
@@ -22,14 +28,22 @@ public class Reno {
 		this.apodo = apodo;
 	}
 
-
+/**
+ * 
+ * @param direccion
+ * @return El chillido que emite el reno al volar
+ */
 	public String volar(String direccion){
         System.out.println("Reno.volar");
 
         return "mmmmmiiiiii chus chus peeeeerrrr";
     }
 
-    
+/**
+ * Este metodo hace correr al reno
+ * @deprecated NO USAR MAS, mejor usar el metodo volar {#link }    
+ * @param direccion
+ */
     public void correr(String direccion){
         //TODO terminar
     }
