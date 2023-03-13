@@ -1,8 +1,19 @@
 package com.polonorte;
+/**
+ * <h1> Clase SantaClaus</h1>
+ * Representa al mismisimo SantaClaus
 
+ * @author oscar
+ *@version 1.0
+ */
 import java.time.LocalDate;
 import java.time.Month;
-
+/**
+ * 
+ * 
+ * @deprecated es la clase santaclaus
+ * @param direccion La direccion en la que recorre santaclaus
+ */
 //Esta clase describe a un santa claus y la creó Baltasar. Se considera que es la versión 1.2 del programa
 public class SantaClaus {
 
@@ -18,7 +29,11 @@ public class SantaClaus {
 		this.trabajando = false;
 		this.caracterActual = Utils.CARACTER_AMIGABLE;
 	}
-
+	/**
+	 * 
+	 * @param generar -  genera un saludo segun el caracter
+	 * @return Genera el saludo que genera el carácter
+	 */
 	// (Este método se ha introducido desde la versión 1.1)
 	public String generarSaludoSegunCaracter(String caracter) {
 
@@ -39,7 +54,13 @@ public class SantaClaus {
 		}
 		return saludo;
 	}
-
+	
+	  /**
+     * Este método hace que se compruebe el trabajo
+     * 
+     * @deprecated NO USAR MÄS mejor usar el metodo volar
+     * @param boolean - evuelve un valor true o false si hay trabajo.
+     */
 	// (Este método se ha introducido desde la versión 1.2)
 	// Incluir con javadoc que se lanza la DatosInvalidosException (mirar ->
 	// https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#@exception)
