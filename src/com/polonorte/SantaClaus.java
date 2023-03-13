@@ -9,7 +9,7 @@ package com.polonorte;
 import java.time.LocalDate;
 import java.time.Month;
 /**
- * 
+ * Clase SantaClaus
  * 
  * @deprecated es la clase santaclaus
  * @param direccion La direccion en la que recorre santaclaus
@@ -35,6 +35,11 @@ public class SantaClaus {
 	 * @return Genera el saludo que genera el carácter
 	 */
 	// (Este método se ha introducido desde la versión 1.1)
+	/**
+	 * 
+	 * @param generar -  genera un saludo segun el caracter
+	 * @return Genera el saludo que genera el carácter
+	 */
 	public String generarSaludoSegunCaracter(String caracter) {
 
 		String saludo;
