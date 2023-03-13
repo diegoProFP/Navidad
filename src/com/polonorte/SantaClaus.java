@@ -61,6 +61,13 @@ public class SantaClaus {
 		return saludo;
 	}
 
+	/**
+	 * 
+	 * 
+	 * 
+	 * 
+	 * */
+	
 	// (Este método se ha introducido desde la versión 1.2)
 	// Incluir con javadoc que se lanza la DatosInvalidosException (mirar ->
 	// https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#@exception)
