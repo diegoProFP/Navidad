@@ -1,11 +1,17 @@
 package com.polonorte;
 
-
+/**
+ * clase Reno
+ * @author alumno
+ * @version 1.1
+ */
 public class Reno {
 
     private String nombre;
     private int velocidad;
 
+    private String pedígrí;
+    
     private int numCuernos;
     private int numCollares;
     
@@ -13,6 +19,14 @@ public class Reno {
    
     //Esto es un comentario de prueba
     
+<<<<<<< HEAD
+    /**
+     * Este metodo hace volar al reno
+     * @param direccion - La direccion en la que vuela el reno
+     * @return El chillido que emite el chopper al curar
+     */
+    public String volar(String direccion){
+=======
     public String getApodo() {
 		return apodo;
 	}
@@ -24,12 +38,20 @@ public class Reno {
 
 
 	public String volar(String direccion){
+>>>>>>> refs/heads/main
         System.out.println("Reno.volar");
 
         return "mmmmmiiiiii chus chus peeeeerrrr";
     }
 
     
+    //er canelita surmano
+    
+    /**
+     * Este metodo lo hace correr
+     * @deprecated	No usarlo, mejor usa volar miloko
+     * @param direccion
+     */
     public void correr(String direccion){
         //TODO terminar
     }
