@@ -2,14 +2,23 @@ package com.polonorte;
 
 import java.time.LocalDate;
 import java.time.Month;
-
+/**
+ *Clase Santa Claus 
+ @author Baltasar
+ @version 1.2
+  
+  **/
 //Esta clase describe a un santa claus y la creó Baltasar. Se considera que es la versión 1.2 del programa
 public class SantaClaus {
 
 	// Los kilos de peso de SantaClaus
+
 	private int kilosPeso;
 
 	// Si está trabajando ya o no
+	/**
+	 * Atributo para saber si esta trabajando o no
+	 */
 	private boolean trabajando;
 
 	private String caracterActual;
@@ -20,6 +29,12 @@ public class SantaClaus {
 	}
 
 	// (Este método se ha introducido desde la versión 1.1)
+	/**
+	 * generara un saludo dependiendo de el caso necesario
+	 * @since 1.1
+	 * @param caracter
+	 * @return
+	 */
 	public String generarSaludoSegunCaracter(String caracter) {
 
 		String saludo;
@@ -43,6 +58,13 @@ public class SantaClaus {
 	// (Este método se ha introducido desde la versión 1.2)
 	// Incluir con javadoc que se lanza la DatosInvalidosException (mirar ->
 	// https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#@exception)
+	/**
+	 * Este metodo verá si ya ha empezado a trabajar o todavía no
+	 * @since 1.2
+	 * @param fecha valor de LocalDate
+	 * @exception on fecha valor null 
+
+	 * **/
 	public boolean comprobarTrabajo(LocalDate fecha) throws DatosInvalidosException {
 
 		if (fecha == null) {
@@ -61,6 +83,11 @@ public class SantaClaus {
 	// Este metodo está desde la versión 0.5. se tiene que considerar obsoleto, y
 	// referenciar al metodo
 	// generarSaludoSegunCaracter
+	/**
+	 * @since 0.5.
+	 * @deprecated este metodo esta obsoleto y no es practico actualmente
+	 * {@link generarSaludoSegunCaracter} metodo que funciona actualmente
+	 **/
 	public String saludar() {
 		return "hohoho";
 	}
