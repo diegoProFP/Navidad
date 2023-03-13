@@ -14,6 +14,7 @@ public class PruebaNavidad {
 		
 		LocalDate fechaNavidad = Utils.generarDiaAleatorioDiciembre();
 		boolean santaTrabajando = santa.comprobarTrabajo(fechaNavidad);
+		santa.saludar();
 		
 		System.out.println("La fecha de hoy es: " + fechaNavidad);
 		System.out.println("¿Está santa trabajando?: " + Utils.convertirBooleanASiNo(santaTrabajando));

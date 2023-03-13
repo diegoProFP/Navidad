@@ -3,14 +3,23 @@ package com.polonorte;
 import java.time.LocalDate;
 import java.time.Month;
 
+/**
+ * Clase SantaClaus.
+ * Describe a un santa claus y la creó Baltasar.
+ *@version Se considera que es la versión 1.2 del programa.
+ * @author alumno*/
 //Esta clase describe a un santa claus y la creó Baltasar. Se considera que es la versión 1.2 del programa
 public class SantaClaus {
 
-	// Los kilos de peso de SantaClaus
-	private int kilosPeso;
+	/**
+	 * Los kilos de peso de SantaClaus
+	 * @author alumno */
+		private int kilosPeso;
 
-	// Si está trabajando ya o no
-	private boolean trabajando;
+	/**
+	 * Si está trabajando ya o no
+	 * @author alumno*/
+		private boolean trabajando;
 
 	private String caracterActual;
 
@@ -19,6 +28,12 @@ public class SantaClaus {
 		this.caracterActual = Utils.CARACTER_AMIGABLE;
 	}
 
+	/**
+	 * Genera un saludo de Santa Claus según el carácter que se le pase por parámetro
+	 *@since Se introduce desde la versión 1.1
+	 *@param caracter El carácter que tiene Santa Claus y del que se generará un saludo
+	 *@return saludo de Santa Claus según el carácter
+	 * */
 	// (Este método se ha introducido desde la versión 1.1)
 	public String generarSaludoSegunCaracter(String caracter) {
 
@@ -39,7 +54,13 @@ public class SantaClaus {
 		}
 		return saludo;
 	}
-
+/**
+ * Este métdo es para comprobar si SantaClaus está trabajando o no con la fecha que se ha pasado.
+ * @since 1.2
+ * @param fecha que trabaja SantaClaus
+ * @return true en la fecha que se ha pasado, si está trabajando; false en la fecha que se ha pasado, y no está trabajando. 
+ * @throws DatosInvalidosException lanza excepción cuando la fecha que se ha pasado es nulo.
+ */
 	// (Este método se ha introducido desde la versión 1.2)
 	// Incluir con javadoc que se lanza la DatosInvalidosException (mirar ->
 	// https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#@exception)
@@ -57,7 +78,12 @@ public class SantaClaus {
 
 		return this.trabajando;
 	}
-
+/**
+ * Este método devuelve un saludo
+ * @deprecated NO USAR, mejor usar {@link #generarSaludoSegunCaracter(String)
+ * @since 0.5
+ * @return saludo de Santa Claus
+ */
 	// Este metodo está desde la versión 0.5. se tiene que considerar obsoleto, y
 	// referenciar al metodo
 	// generarSaludoSegunCaracter
@@ -78,28 +104,28 @@ public class SantaClaus {
 	public void setKilosPeso(int kilosPeso) {
 		this.kilosPeso = kilosPeso;
 	}
-
+	
 	/**
 	 * @return the trabajando
 	 */
 	public boolean isTrabajando() {
 		return trabajando;
 	}
-
+	
 	/**
 	 * @param trabajando the trabajando to set
 	 */
 	public void setTrabajando(boolean trabajando) {
 		this.trabajando = trabajando;
 	}
-
+	
 	/**
 	 * @return the caracterActual
 	 */
 	public String getCaracterActual() {
 		return caracterActual;
 	}
-
+	
 	/**
 	 * @param caracterActual the caracterActual to set
 	 */
@@ -107,6 +133,7 @@ public class SantaClaus {
 		this.caracterActual = caracterActual;
 	}
 
-	/* Getters y setters. No hace falta Javadoc en este caso */
+	
+	
 
 }

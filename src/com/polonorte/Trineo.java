@@ -2,7 +2,12 @@ package com.polonorte;
 
 import java.util.List;
 
-
+/**
+ * Clase trineo.
+ * Lleva los regalos y son tirados por los renos
+ * @author alumno
+ *
+ */
 public class Trineo {
 
     private int numAsientos;
@@ -24,7 +29,12 @@ public class Trineo {
         return this.bolsaRegalos.add(regalo);
     }
 
-   
+   /**
+    * incluye un reno en el trineo
+    * @param uno El reno incluir
+    * @see Reno
+    * @return true so se ha podido incluir; false en caso contrario
+    */
     public boolean incluirReno(Reno uno){
         return this.renos.add(uno);
 
