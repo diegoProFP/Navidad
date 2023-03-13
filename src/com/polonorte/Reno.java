@@ -1,5 +1,13 @@
 package com.polonorte;
 
+/**
+ * 
+ * @author Isma
+ * @version 1.0
+ *
+ * 
+ */
+
 
 public class Reno {
 
@@ -29,10 +37,14 @@ public class Reno {
         return "mmmmmiiiiii chus chus peeeeerrrr";
     }
 
+	/**
+	 * @param 
+	 */
     
     public void correr(String direccion){
         //TODO terminar
     }
+    
 
 	public String getNombre() {
 		return nombre;
