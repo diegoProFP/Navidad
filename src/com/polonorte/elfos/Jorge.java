@@ -2,7 +2,7 @@ package com.polonorte.elfos;
 
 public class Jorge extends ElfoGenerico{
 	
-	public jorge() {
+	Jorge() {
 		super("Jorge", SeccionLaboralElfo.JUEGOS_MESA);
 	}
 
